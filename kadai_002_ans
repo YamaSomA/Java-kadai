@@ -1,0 +1,14 @@
+練習問題の解答
+
+第二章
+
+2-2
+①　int x = 3 + 5.0;　×
+②　double d = 2.0F;　〇
+③　int number = "5";　×
+④　String s = 2 + "人目";　〇
+⑤　byte b = a;　〇？
+⑥　double d = true;　×
+⑦　short s = (byte)2;　〇
+
+Ans ②、④、⑤？、⑦
