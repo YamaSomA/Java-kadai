@@ -1,0 +1,22 @@
+練習問題の解答
+
+第一章
+
+1-1
+ア　コンパイラ
+イ　インタプリタ
+ウ　ソースコード
+エ　バイトコード
+オ　Java visual machine
+
+1-2
+
+public class Main {
+    public static void main(String[] args){
+	int a = 3;
+	int b = 5;
+	int c = a*b;
+	System.out.println(c);
+    }
+}
+
