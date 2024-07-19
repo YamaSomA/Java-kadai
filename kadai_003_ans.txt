@@ -1,0 +1,131 @@
+練習問題の解答
+
+第三章
+
+3-1
+
+①weight == 60
+②(age1 + age2) * 2 > 60
+③age % 2 == 1
+④name.equals("湊")
+
+
+3-2
+
+解答 
+　A,C,E,F
+
+→正解はC,E,F(Aは評価結果がtrue/falseにならない)
+
+
+3-3
+
+public class main{
+	public static void main(String[] args){
+
+		int isHungry = 1;
+
+ 		String food = "適当な食べ物";
+
+		System.out.println("こんにちは");
+
+		if (isHungry == 0){
+			System.out.println("お腹がいっぱいです");
+		} else {
+			System.out.println("はらぺこです");
+		}
+
+		if (isHungry == 1) {
+			System.out.println(food + "をいただきます");
+		}
+		System.out.println("ごちそうさまでした");
+		
+	}
+}
+
+
+3-4
+
+不具合の原因
+
+2行以上なのにelseに{}がついてない
+
+修正内容
+
+else{
+	System.out.println("映画を見ます");
+	System.out.println("寝ます");
+}
+
+
+3-5
+
+public class main{
+
+	public static void main(String[] args){
+
+		System.out.print("[メニュー] 1:検索 2:登録 3:変更 4:削除＞");
+
+		int selected = new java.util.Scanner(System.in).nextInt();
+
+		switch (selected) {
+			
+			case 1 -> {
+
+				System.out.println("検索します");
+			}
+
+			case 2 -> {
+
+				System.out.println("登録します");
+			}
+
+			case 3 -> {
+
+				System.out.println("変更します");
+			}
+
+			case 4 -> {
+
+				System.out.println("削除します");
+			}
+		}
+	}
+}
+
+
+3-6
+
+public class main{
+
+	public static void main(String[] args){
+
+		System.out.print("【数あてゲーム】");
+
+		int ans = new java.util.Random().nextInt(10);
+
+		for (int i = 0; i < 5; i++) {
+
+			System.out.println("0～9の数字を入力してください");
+
+			int num = new java.util.Scanner(System.in).nextInt();
+
+			if (ans == num) {
+
+				System.out.println("アタリ！");
+
+				break;
+
+			} else {
+
+				System.out.println("違います");
+
+			}
+
+		}
+
+		System.out.println("ゲームを終了します");
+
+	}
+
+}
