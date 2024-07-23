@@ -15,7 +15,7 @@
 解答 
 　A,C,E,F
 
-→正解はC,E,F(Aは評価結果がtrue/falseにならない)
+→正解はC,D,E,F(Aは評価結果がtrue/falseにならない)
 
 
 3-3
