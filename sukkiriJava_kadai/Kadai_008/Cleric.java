@@ -34,13 +34,13 @@ public class Cleric {
 		
 			int recover = new Random().nextInt(3) + sec;
 			
-			int recoverActual = Math.min(this.MAX_MP - this.mp, recover);
+			int recover2 = Math.min(this.MAX_MP - this.mp, recover);
 			
-		    this.mp += recoverActual;
+		    this.mp += recover2;
 
-		System.out.println("MPが" + recoverActual + "回復した");
+		System.out.println("MPが" + recover2 + "回復した");
 		        
-			return recoverActual;
+			return recover2;
 		    
 	}
 	  
