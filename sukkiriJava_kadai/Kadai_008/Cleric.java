@@ -28,19 +28,20 @@ public class Cleric {
 	
 	  }
 	  
-		    public int pray(int sec) {
+	public int pray(int sec) {
 		      
-		    	System.out.println(this.name + "は" + sec + "秒間天に祈った！");
+		System.out.println(this.name + "は" + sec + "秒間天に祈った！");
+		
+			int recover = new Random().nextInt(3) + sec;
+			
+			int recoverActual = Math.min(this.MAX_MP - this.mp, recover);
+			
+		    this.mp += recoverActual;
 
-		    		int recover = new Random().nextInt(3) + sec;
-		    
-		    		int recoverActual = Math.min(this.MAX_MP - this.mp, recover);
-		     
-		    		this.mp += recoverActual;
-
-		    	System.out.println("MPが" + recoverActual + "回復した");
+		System.out.println("MPが" + recoverActual + "回復した");
 		        
-		        	return recoverActual;
-		    }
+			return recoverActual;
+		    
+	}
 	  
 }
