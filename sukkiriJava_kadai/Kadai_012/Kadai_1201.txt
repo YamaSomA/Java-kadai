@@ -1,0 +1,2 @@
+（1）Sword、Item、Sword、Item
+（2）Monster、Slime、Slime、Monster
