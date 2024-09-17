@@ -32,13 +32,12 @@ public class Rose extends Flower {
     }
 
 
+
 <Main.java>
 public class Main {
     public static void main(String[] args) {
-        Flower[] f = new Flower[3];
+        Flower[] f = new Flower[1];
         f[0] = new Rose();
-        f[1] = new SunFlower();
-        f[2] = new Tulip();
         for (Flower fl : f) {
             fl.bloom();
         }
