@@ -1,0 +1,52 @@
+多態性とは
+
+・同一の命令を異なるオブジェクトが受け取ることによって、異なる動作をする性質
+・同じ名前のメソッドに対して、それぞれ異なる振る舞いを持たせることができる
+・コードの再利用性が高まる
+・「is-a」の関係
+﻿
+
+サンプルコード
+
+<Flower.java>
+
+
+public abstract class Flower {
+    String name;
+    String color;
+    public void bloom() {
+        System.out.println("this.name + "は" + this.color + "色に咲きました");
+    }
+}
+
+
+
+
+<Rose.java>
+
+
+public class Rose extends Flower {
+    int thron;
+    public void cutThorn() {
+        System.out.println(this.name + "のトゲを" + this.thron + "個切りました");
+    }
+
+
+<Main.java>
+public class Main {
+    public static void main(String[] args) {
+        Flower[] f = new Flower[3];
+        f[0] = new Rose();
+        f[1] = new SunFlower();
+        f[2] = new Tulip();
+        for (Flower fl : f) {
+            fl.bloom();
+        }
+    }
+}
+
+
+多態性のメリット
+・インスタンスをまとめて大まかにとらえることで見やすい。
+・要素の追加が楽。
+・命令が1回で済む。
